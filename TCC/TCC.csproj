@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6DAD243D-152A-45F4-8F23-6FAC661AEBC6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TCC</RootNamespace>
+    <AssemblyName>TCC</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCadMedic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadMedic.Designer.cs">
+      <DependentUpon>frmCadMedic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditPaci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditPaci.Designer.cs">
+      <DependentUpon>frmEditPaci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPaciente.Designer.cs">
+      <DependentUpon>frmCadPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCadUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadUser.Designer.cs">
+      <DependentUpon>frmCadUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditUser.Designer.cs">
+      <DependentUpon>frmEditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaciente.Designer.cs">
+      <DependentUpon>frmPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesqPac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesqPac.Designer.cs">
+      <DependentUpon>frmPesqPac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPesqUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesqUser.Designer.cs">
+      <DependentUpon>frmPesqUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrimeiroAcesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrimeiroAcesso.Designer.cs">
+      <DependentUpon>frmPrimeiroAcesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRecSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRecSenha.Designer.cs">
+      <DependentUpon>frmRecSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmCadMedic.resx">
+      <DependentUpon>frmCadMedic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPaciente.resx">
+      <DependentUpon>frmCadPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCadUser.resx">
+      <DependentUpon>frmCadUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditPaci.resx">
+      <DependentUpon>frmEditPaci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditUser.resx">
+      <DependentUpon>frmEditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaciente.resx">
+      <DependentUpon>frmPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesqPac.resx">
+      <DependentUpon>frmPesqPac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPesqUser.resx">
+      <DependentUpon>frmPesqUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrimeiroAcesso.resx">
+      <DependentUpon>frmPrimeiroAcesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRecSenha.resx">
+      <DependentUpon>frmRecSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

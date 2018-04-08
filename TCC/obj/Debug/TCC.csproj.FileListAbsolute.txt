@@ -1,0 +1,13 @@
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.csprojResolveAssemblyReference.cache
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.frmCadPaciente.resources
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.frmCadUser.resources
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.frmEditUser.resources
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.frmPaciente.resources
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.frmPesqUser.resources
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.frmPrimeiroAcesso.resources
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.frmPrincipal.resources
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.frmRecSenha.resources
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.frmUsuario.resources
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.Login.resources
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.csproj.GenerateResource.Cache
+C:\Users\Flavia\Desktop\TCC\TCC\TCC\obj\Debug\TCC.csproj.CoreCompileInputs.cache
