@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TCC
 {
-    public partial class Login : MetroFramework.Forms.MetroForm
+    public partial class frmLogin : MetroFramework.Forms.MetroForm
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
         }
