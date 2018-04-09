@@ -1,0 +1,1 @@
+Password=Freud1010;Persist Security Info=True;User ID=sa;Initial Catalog=SGIOLAP;Data Source=.\sqlexpress

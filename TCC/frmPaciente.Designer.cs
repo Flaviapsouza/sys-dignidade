@@ -33,14 +33,14 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.metroButton6 = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
+            this.btnPesq = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.btnNovo = new MetroFramework.Controls.MetroButton();
             this.gvDados = new MetroFramework.Controls.MetroGrid();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gvDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +52,7 @@
             this.metroButton6.TabIndex = 24;
             this.metroButton6.Text = "Sair";
             this.metroButton6.UseSelectable = true;
+            this.metroButton6.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // metroButton5
             // 
@@ -61,15 +62,17 @@
             this.metroButton5.TabIndex = 23;
             this.metroButton5.Text = "Excluir";
             this.metroButton5.UseSelectable = true;
+            this.metroButton5.Click += new System.EventHandler(this.btnApaga_Click);
             // 
-            // metroButton4
+            // btnPesq
             // 
-            this.metroButton4.Location = new System.Drawing.Point(342, 63);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(88, 65);
-            this.metroButton4.TabIndex = 22;
-            this.metroButton4.Text = "Pesquisar";
-            this.metroButton4.UseSelectable = true;
+            this.btnPesq.Location = new System.Drawing.Point(342, 63);
+            this.btnPesq.Name = "btnPesq";
+            this.btnPesq.Size = new System.Drawing.Size(88, 65);
+            this.btnPesq.TabIndex = 22;
+            this.btnPesq.Text = "Pesquisar";
+            this.btnPesq.UseSelectable = true;
+            this.btnPesq.Click += new System.EventHandler(this.btnPesq_Click);
             // 
             // metroButton3
             // 
@@ -79,6 +82,7 @@
             this.metroButton3.TabIndex = 21;
             this.metroButton3.Text = "Editar";
             this.metroButton3.UseSelectable = true;
+            this.metroButton3.Click += new System.EventHandler(this.btnEdita_Click);
             // 
             // metroButton2
             // 
@@ -88,6 +92,7 @@
             this.metroButton2.TabIndex = 20;
             this.metroButton2.Text = "Consultar";
             this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // btnNovo
             // 
@@ -97,6 +102,7 @@
             this.btnNovo.TabIndex = 19;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseSelectable = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // gvDados
             // 
@@ -119,9 +125,9 @@
             this.gvDados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvDados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
+            this.ID,
+            this.NOME,
+            this.CPF});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -153,29 +159,32 @@
             this.gvDados.TabIndex = 18;
             this.gvDados.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // Column1
+            // ID
             // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.MinimumWidth = 120;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 120;
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "ID";
+            this.ID.MinimumWidth = 120;
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            this.ID.Width = 120;
             // 
-            // Column2
+            // NOME
             // 
-            this.Column2.HeaderText = "Nome";
-            this.Column2.MinimumWidth = 350;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 350;
+            this.NOME.DataPropertyName = "NOME";
+            this.NOME.HeaderText = "Nome";
+            this.NOME.MinimumWidth = 350;
+            this.NOME.Name = "NOME";
+            this.NOME.ReadOnly = true;
+            this.NOME.Width = 350;
             // 
-            // Column3
+            // CPF
             // 
-            this.Column3.HeaderText = "CPF";
-            this.Column3.MinimumWidth = 150;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 150;
+            this.CPF.DataPropertyName = "CPF";
+            this.CPF.HeaderText = "CPF";
+            this.CPF.MinimumWidth = 150;
+            this.CPF.Name = "CPF";
+            this.CPF.ReadOnly = true;
+            this.CPF.Width = 150;
             // 
             // frmPaciente
             // 
@@ -184,13 +193,18 @@
             this.ClientSize = new System.Drawing.Size(663, 385);
             this.Controls.Add(this.metroButton6);
             this.Controls.Add(this.metroButton5);
-            this.Controls.Add(this.metroButton4);
+            this.Controls.Add(this.btnPesq);
             this.Controls.Add(this.metroButton3);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.gvDados);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmPaciente";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.Text = "Pacientes";
+            this.Load += new System.EventHandler(this.frmPaciente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvDados)).EndInit();
             this.ResumeLayout(false);
 
@@ -200,13 +214,13 @@
 
         private MetroFramework.Controls.MetroButton metroButton6;
         private MetroFramework.Controls.MetroButton metroButton5;
-        private MetroFramework.Controls.MetroButton metroButton4;
+        private MetroFramework.Controls.MetroButton btnPesq;
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroButton btnNovo;
         public MetroFramework.Controls.MetroGrid gvDados;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CPF;
     }
 }

@@ -43,18 +43,20 @@
             this.btnCanc.Location = new System.Drawing.Point(297, 276);
             this.btnCanc.Name = "btnCanc";
             this.btnCanc.Size = new System.Drawing.Size(87, 54);
-            this.btnCanc.TabIndex = 15;
+            this.btnCanc.TabIndex = 7;
             this.btnCanc.Text = "Cancelar";
             this.btnCanc.UseSelectable = true;
+            this.btnCanc.Click += new System.EventHandler(this.btnCanc_Click);
             // 
             // btnConfirma
             // 
             this.btnConfirma.Location = new System.Drawing.Point(108, 276);
             this.btnConfirma.Name = "btnConfirma";
             this.btnConfirma.Size = new System.Drawing.Size(87, 54);
-            this.btnConfirma.TabIndex = 14;
+            this.btnConfirma.TabIndex = 6;
             this.btnConfirma.Text = "Confirmar";
             this.btnConfirma.UseSelectable = true;
+            this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click);
             // 
             // metroLabel5
             // 
@@ -62,7 +64,7 @@
             this.metroLabel5.Location = new System.Drawing.Point(23, 68);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(46, 19);
-            this.metroLabel5.TabIndex = 13;
+            this.metroLabel5.TabIndex = 0;
             this.metroLabel5.Text = "Nome";
             // 
             // txtNome
@@ -90,7 +92,7 @@
             this.txtNome.SelectionStart = 0;
             this.txtNome.ShortcutsEnabled = true;
             this.txtNome.Size = new System.Drawing.Size(361, 25);
-            this.txtNome.TabIndex = 12;
+            this.txtNome.TabIndex = 1;
             this.txtNome.UseSelectable = true;
             this.txtNome.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtNome.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -101,7 +103,7 @@
             this.metroLabel1.Location = new System.Drawing.Point(23, 130);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(53, 19);
-            this.metroLabel1.TabIndex = 17;
+            this.metroLabel1.TabIndex = 2;
             this.metroLabel1.Text = "Usuário";
             // 
             // txtUser
@@ -129,7 +131,7 @@
             this.txtUser.SelectionStart = 0;
             this.txtUser.ShortcutsEnabled = true;
             this.txtUser.Size = new System.Drawing.Size(172, 25);
-            this.txtUser.TabIndex = 16;
+            this.txtUser.TabIndex = 3;
             this.txtUser.UseSelectable = true;
             this.txtUser.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtUser.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
@@ -140,7 +142,7 @@
             this.metroLabel2.Location = new System.Drawing.Point(23, 199);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(100, 19);
-            this.metroLabel2.TabIndex = 18;
+            this.metroLabel2.TabIndex = 4;
             this.metroLabel2.Text = "Tipo de usuário";
             // 
             // cbxTipoUser
@@ -153,7 +155,7 @@
             this.cbxTipoUser.Location = new System.Drawing.Point(24, 221);
             this.cbxTipoUser.Name = "cbxTipoUser";
             this.cbxTipoUser.Size = new System.Drawing.Size(170, 29);
-            this.cbxTipoUser.TabIndex = 19;
+            this.cbxTipoUser.TabIndex = 5;
             this.cbxTipoUser.UseSelectable = true;
             // 
             // frmCadUser
