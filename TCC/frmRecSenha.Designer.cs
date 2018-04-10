@@ -30,7 +30,7 @@
         {
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.txtUser = new MetroFramework.Controls.MetroTextBox();
-            this.btnPesc = new MetroFramework.Controls.MetroButton();
+            this.btnPesq = new MetroFramework.Controls.MetroButton();
             this.txtCod = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.txtPsec = new MetroFramework.Controls.MetroTextBox();
@@ -38,13 +38,13 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.btnConfirma = new MetroFramework.Controls.MetroButton();
             this.btncanc = new MetroFramework.Controls.MetroButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtNewSenha = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
-            this.txtNewSenha2 = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.gbxAltSenha = new System.Windows.Forms.GroupBox();
             this.btnOkSenha = new MetroFramework.Controls.MetroButton();
-            this.groupBox1.SuspendLayout();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.txtNewSenha2 = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.txtNewSenha = new MetroFramework.Controls.MetroTextBox();
+            this.gbxAltSenha.SuspendLayout();
             this.SuspendLayout();
             // 
             // metroLabel1
@@ -86,14 +86,15 @@
             this.txtUser.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtUser.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // btnPesc
+            // btnPesq
             // 
-            this.btnPesc.Location = new System.Drawing.Point(219, 115);
-            this.btnPesc.Name = "btnPesc";
-            this.btnPesc.Size = new System.Drawing.Size(67, 27);
-            this.btnPesc.TabIndex = 4;
-            this.btnPesc.Text = "Pesquisar";
-            this.btnPesc.UseSelectable = true;
+            this.btnPesq.Location = new System.Drawing.Point(219, 115);
+            this.btnPesq.Name = "btnPesq";
+            this.btnPesq.Size = new System.Drawing.Size(67, 27);
+            this.btnPesq.TabIndex = 4;
+            this.btnPesq.Text = "Pesquisar";
+            this.btnPesq.UseSelectable = true;
+            this.btnPesq.Click += new System.EventHandler(this.btnPesq_Click);
             // 
             // txtCod
             // 
@@ -212,6 +213,7 @@
             this.btnConfirma.TabIndex = 11;
             this.btnConfirma.Text = "Confirmar";
             this.btnConfirma.UseSelectable = true;
+            this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click);
             // 
             // btncanc
             // 
@@ -221,59 +223,41 @@
             this.btncanc.TabIndex = 12;
             this.btncanc.Text = "Cancelar";
             this.btncanc.UseSelectable = true;
+            this.btncanc.Click += new System.EventHandler(this.btncanc_Click);
             // 
-            // groupBox1
+            // gbxAltSenha
             // 
-            this.groupBox1.Controls.Add(this.btnOkSenha);
-            this.groupBox1.Controls.Add(this.metroLabel5);
-            this.groupBox1.Controls.Add(this.txtNewSenha2);
-            this.groupBox1.Controls.Add(this.metroLabel4);
-            this.groupBox1.Controls.Add(this.txtNewSenha);
-            this.groupBox1.Location = new System.Drawing.Point(304, 116);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(199, 212);
-            this.groupBox1.TabIndex = 13;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Alterar senha";
+            this.gbxAltSenha.Controls.Add(this.btnOkSenha);
+            this.gbxAltSenha.Controls.Add(this.metroLabel5);
+            this.gbxAltSenha.Controls.Add(this.txtNewSenha2);
+            this.gbxAltSenha.Controls.Add(this.metroLabel4);
+            this.gbxAltSenha.Controls.Add(this.txtNewSenha);
+            this.gbxAltSenha.Enabled = false;
+            this.gbxAltSenha.Location = new System.Drawing.Point(304, 116);
+            this.gbxAltSenha.Name = "gbxAltSenha";
+            this.gbxAltSenha.Size = new System.Drawing.Size(199, 212);
+            this.gbxAltSenha.TabIndex = 13;
+            this.gbxAltSenha.TabStop = false;
+            this.gbxAltSenha.Text = "Alterar senha";
             // 
-            // txtNewSenha
+            // btnOkSenha
             // 
+            this.btnOkSenha.Location = new System.Drawing.Point(48, 153);
+            this.btnOkSenha.Name = "btnOkSenha";
+            this.btnOkSenha.Size = new System.Drawing.Size(95, 45);
+            this.btnOkSenha.TabIndex = 14;
+            this.btnOkSenha.Text = "Salvar";
+            this.btnOkSenha.UseSelectable = true;
+            this.btnOkSenha.Click += new System.EventHandler(this.btnOkSenha_Click);
             // 
+            // metroLabel5
             // 
-            // 
-            this.txtNewSenha.CustomButton.Image = null;
-            this.txtNewSenha.CustomButton.Location = new System.Drawing.Point(140, 1);
-            this.txtNewSenha.CustomButton.Name = "";
-            this.txtNewSenha.CustomButton.Size = new System.Drawing.Size(23, 23);
-            this.txtNewSenha.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtNewSenha.CustomButton.TabIndex = 1;
-            this.txtNewSenha.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtNewSenha.CustomButton.UseSelectable = true;
-            this.txtNewSenha.CustomButton.Visible = false;
-            this.txtNewSenha.Lines = new string[0];
-            this.txtNewSenha.Location = new System.Drawing.Point(17, 49);
-            this.txtNewSenha.MaxLength = 32767;
-            this.txtNewSenha.Name = "txtNewSenha";
-            this.txtNewSenha.PasswordChar = '\0';
-            this.txtNewSenha.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtNewSenha.SelectedText = "";
-            this.txtNewSenha.SelectionLength = 0;
-            this.txtNewSenha.SelectionStart = 0;
-            this.txtNewSenha.ShortcutsEnabled = true;
-            this.txtNewSenha.Size = new System.Drawing.Size(164, 25);
-            this.txtNewSenha.TabIndex = 3;
-            this.txtNewSenha.UseSelectable = true;
-            this.txtNewSenha.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtNewSenha.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel4
-            // 
-            this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(17, 27);
-            this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(77, 19);
-            this.metroLabel4.TabIndex = 4;
-            this.metroLabel4.Text = "Nova senha";
+            this.metroLabel5.AutoSize = true;
+            this.metroLabel5.Location = new System.Drawing.Point(17, 93);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(106, 19);
+            this.metroLabel5.TabIndex = 6;
+            this.metroLabel5.Text = "Confirmar senha";
             // 
             // txtNewSenha2
             // 
@@ -305,30 +289,51 @@
             this.txtNewSenha2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtNewSenha2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // metroLabel5
+            // metroLabel4
             // 
-            this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(17, 93);
-            this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(106, 19);
-            this.metroLabel5.TabIndex = 6;
-            this.metroLabel5.Text = "Confirmar senha";
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.Location = new System.Drawing.Point(17, 27);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(77, 19);
+            this.metroLabel4.TabIndex = 4;
+            this.metroLabel4.Text = "Nova senha";
             // 
-            // btnOkSenha
+            // txtNewSenha
             // 
-            this.btnOkSenha.Location = new System.Drawing.Point(48, 153);
-            this.btnOkSenha.Name = "btnOkSenha";
-            this.btnOkSenha.Size = new System.Drawing.Size(95, 45);
-            this.btnOkSenha.TabIndex = 14;
-            this.btnOkSenha.Text = "Salvar";
-            this.btnOkSenha.UseSelectable = true;
+            // 
+            // 
+            // 
+            this.txtNewSenha.CustomButton.Image = null;
+            this.txtNewSenha.CustomButton.Location = new System.Drawing.Point(140, 1);
+            this.txtNewSenha.CustomButton.Name = "";
+            this.txtNewSenha.CustomButton.Size = new System.Drawing.Size(23, 23);
+            this.txtNewSenha.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtNewSenha.CustomButton.TabIndex = 1;
+            this.txtNewSenha.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtNewSenha.CustomButton.UseSelectable = true;
+            this.txtNewSenha.CustomButton.Visible = false;
+            this.txtNewSenha.Lines = new string[0];
+            this.txtNewSenha.Location = new System.Drawing.Point(17, 49);
+            this.txtNewSenha.MaxLength = 32767;
+            this.txtNewSenha.Name = "txtNewSenha";
+            this.txtNewSenha.PasswordChar = '\0';
+            this.txtNewSenha.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtNewSenha.SelectedText = "";
+            this.txtNewSenha.SelectionLength = 0;
+            this.txtNewSenha.SelectionStart = 0;
+            this.txtNewSenha.ShortcutsEnabled = true;
+            this.txtNewSenha.Size = new System.Drawing.Size(164, 25);
+            this.txtNewSenha.TabIndex = 3;
+            this.txtNewSenha.UseSelectable = true;
+            this.txtNewSenha.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtNewSenha.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // frmRecSenha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(519, 337);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbxAltSenha);
             this.Controls.Add(this.btncanc);
             this.Controls.Add(this.btnConfirma);
             this.Controls.Add(this.txtRsec);
@@ -336,14 +341,14 @@
             this.Controls.Add(this.txtPsec);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.txtCod);
-            this.Controls.Add(this.btnPesc);
+            this.Controls.Add(this.btnPesq);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.txtUser);
             this.Name = "frmRecSenha";
             this.Text = "Recuperar senha";
             this.Load += new System.EventHandler(this.frmRecSenha_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbxAltSenha.ResumeLayout(false);
+            this.gbxAltSenha.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -353,7 +358,7 @@
 
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroTextBox txtUser;
-        private MetroFramework.Controls.MetroButton btnPesc;
+        private MetroFramework.Controls.MetroButton btnPesq;
         private MetroFramework.Controls.MetroTextBox txtCod;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroTextBox txtPsec;
@@ -361,7 +366,7 @@
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroButton btnConfirma;
         private MetroFramework.Controls.MetroButton btncanc;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbxAltSenha;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroTextBox txtNewSenha;
         private MetroFramework.Controls.MetroButton btnOkSenha;

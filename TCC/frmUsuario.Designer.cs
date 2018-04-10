@@ -38,9 +38,9 @@
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.metroButton6 = new MetroFramework.Controls.MetroButton();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDUSUARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gvDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,9 +65,9 @@
             this.gvDados.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gvDados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvDados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3});
+            this.IDUSUARIO,
+            this.NOME,
+            this.TIPO});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
@@ -107,6 +107,7 @@
             this.btnNovo.TabIndex = 12;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseSelectable = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // metroButton2
             // 
@@ -152,30 +153,34 @@
             this.metroButton6.TabIndex = 17;
             this.metroButton6.Text = "Sair";
             this.metroButton6.UseSelectable = true;
+            this.metroButton6.Click += new System.EventHandler(this.metroButton6_Click);
             // 
-            // Column1
+            // IDUSUARIO
             // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.MinimumWidth = 120;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 120;
+            this.IDUSUARIO.DataPropertyName = "IDUSUARIO";
+            this.IDUSUARIO.HeaderText = "ID";
+            this.IDUSUARIO.MinimumWidth = 120;
+            this.IDUSUARIO.Name = "IDUSUARIO";
+            this.IDUSUARIO.ReadOnly = true;
+            this.IDUSUARIO.Width = 120;
             // 
-            // Column2
+            // NOME
             // 
-            this.Column2.HeaderText = "Usuário";
-            this.Column2.MinimumWidth = 350;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 350;
+            this.NOME.DataPropertyName = "NOME";
+            this.NOME.HeaderText = "Usuário";
+            this.NOME.MinimumWidth = 350;
+            this.NOME.Name = "NOME";
+            this.NOME.ReadOnly = true;
+            this.NOME.Width = 350;
             // 
-            // Column3
+            // TIPO
             // 
-            this.Column3.HeaderText = "Tipo";
-            this.Column3.MinimumWidth = 150;
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 150;
+            this.TIPO.DataPropertyName = "TIPO";
+            this.TIPO.HeaderText = "Tipo";
+            this.TIPO.MinimumWidth = 150;
+            this.TIPO.Name = "TIPO";
+            this.TIPO.ReadOnly = true;
+            this.TIPO.Width = 150;
             // 
             // frmUsuario
             // 
@@ -189,8 +194,14 @@
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.gvDados);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmUsuario";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Usuários";
+            this.Load += new System.EventHandler(this.frmUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvDados)).EndInit();
             this.ResumeLayout(false);
 
@@ -205,8 +216,8 @@
         private MetroFramework.Controls.MetroButton metroButton4;
         private MetroFramework.Controls.MetroButton metroButton5;
         private MetroFramework.Controls.MetroButton metroButton6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDUSUARIO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TIPO;
     }
 }
