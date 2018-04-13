@@ -16,5 +16,23 @@ namespace TCC
         {
             InitializeComponent();
         }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            frmCadUser fcad = new frmCadUser();
+            fcad.ShowDialog();
+        }
+
+        private void metroButton6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void frmUsuario_Load(object sender, EventArgs e)
+        {
+            gvDados.AutoGenerateColumns = false;
+            daoPaciente dp = new daoPaciente();
+            gvDados.DataSource = dp.carregaUsuario();
+        }
     }
 }

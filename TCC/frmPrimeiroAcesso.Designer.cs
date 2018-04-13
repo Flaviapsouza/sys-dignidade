@@ -245,6 +245,7 @@
             this.btnConfirma.TabIndex = 10;
             this.btnConfirma.Text = "Confirmar";
             this.btnConfirma.UseSelectable = true;
+            this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click);
             // 
             // btnCanc
             // 
@@ -254,6 +255,7 @@
             this.btnCanc.TabIndex = 11;
             this.btnCanc.Text = "Cancelar";
             this.btnCanc.UseSelectable = true;
+            this.btnCanc.Click += new System.EventHandler(this.btnCanc_Click);
             // 
             // frmPrimeiroAcesso
             // 

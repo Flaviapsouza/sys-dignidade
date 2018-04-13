@@ -51,7 +51,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(261, 139);
+            this.metroLabel1.Location = new System.Drawing.Point(261, 145);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(44, 19);
             this.metroLabel1.TabIndex = 2;
@@ -67,6 +67,7 @@
             this.lnkPrAcesso.TabIndex = 3;
             this.lnkPrAcesso.Text = "Primeiro acesso";
             this.lnkPrAcesso.UseSelectable = true;
+            this.lnkPrAcesso.Click += new System.EventHandler(this.lnkPrAcesso_LinkClicked);
             // 
             // btnEntrar
             // 
@@ -77,6 +78,7 @@
             this.btnEntrar.TabIndex = 5;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseSelectable = true;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // btnSair
             // 
@@ -86,6 +88,7 @@
             this.btnSair.TabIndex = 6;
             this.btnSair.Text = "Sair";
             this.btnSair.UseSelectable = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // lnkRecSenha
             // 
@@ -105,7 +108,7 @@
             // 
             // 
             this.txtUsuario.CustomButton.Image = null;
-            this.txtUsuario.CustomButton.Location = new System.Drawing.Point(168, 1);
+            this.txtUsuario.CustomButton.Location = new System.Drawing.Point(185, 1);
             this.txtUsuario.CustomButton.Name = "";
             this.txtUsuario.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtUsuario.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -123,7 +126,7 @@
             this.txtUsuario.SelectionLength = 0;
             this.txtUsuario.SelectionStart = 0;
             this.txtUsuario.ShortcutsEnabled = true;
-            this.txtUsuario.Size = new System.Drawing.Size(192, 25);
+            this.txtUsuario.Size = new System.Drawing.Size(209, 25);
             this.txtUsuario.TabIndex = 8;
             this.txtUsuario.UseSelectable = true;
             this.txtUsuario.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -135,7 +138,7 @@
             // 
             // 
             this.txtSenha.CustomButton.Image = null;
-            this.txtSenha.CustomButton.Location = new System.Drawing.Point(168, 1);
+            this.txtSenha.CustomButton.Location = new System.Drawing.Point(185, 1);
             this.txtSenha.CustomButton.Name = "";
             this.txtSenha.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtSenha.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -153,7 +156,7 @@
             this.txtSenha.SelectionLength = 0;
             this.txtSenha.SelectionStart = 0;
             this.txtSenha.ShortcutsEnabled = true;
-            this.txtSenha.Size = new System.Drawing.Size(192, 25);
+            this.txtSenha.Size = new System.Drawing.Size(209, 25);
             this.txtSenha.TabIndex = 9;
             this.txtSenha.UseSelectable = true;
             this.txtSenha.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -172,6 +175,8 @@
             this.Controls.Add(this.lnkPrAcesso);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.Usuario);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmLogin";
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
