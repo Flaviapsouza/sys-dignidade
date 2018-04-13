@@ -88,6 +88,12 @@
     <Compile Include="frmCadMedic.Designer.cs">
       <DependentUpon>frmCadMedic.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadPessoa.Designer.cs">
+      <DependentUpon>frmCadPessoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEditPaci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,12 @@
     </Compile>
     <Compile Include="frmCadUser.Designer.cs">
       <DependentUpon>frmCadUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditPessoa.Designer.cs">
+      <DependentUpon>frmEditPessoa.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEditUser.cs">
       <SubType>Form</SubType>
@@ -124,11 +136,23 @@
     <Compile Include="frmPesqPac.Designer.cs">
       <DependentUpon>frmPesqPac.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPesqPessoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPesqPessoa.Designer.cs">
+      <DependentUpon>frmPesqPessoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPesqUser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPesqUser.Designer.cs">
       <DependentUpon>frmPesqUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPessoas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPessoas.Designer.cs">
+      <DependentUpon>frmPessoas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrimeiroAcesso.cs">
       <SubType>Form</SubType>
@@ -179,11 +203,17 @@
     <EmbeddedResource Include="frmCadPaciente.resx">
       <DependentUpon>frmCadPaciente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCadPessoa.resx">
+      <DependentUpon>frmCadPessoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadUser.resx">
       <DependentUpon>frmCadUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditPaci.resx">
       <DependentUpon>frmEditPaci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditPessoa.resx">
+      <DependentUpon>frmEditPessoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEditUser.resx">
       <DependentUpon>frmEditUser.cs</DependentUpon>
@@ -194,8 +224,14 @@
     <EmbeddedResource Include="frmPesqPac.resx">
       <DependentUpon>frmPesqPac.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmPesqPessoa.resx">
+      <DependentUpon>frmPesqPessoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPesqUser.resx">
       <DependentUpon>frmPesqUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPessoas.resx">
+      <DependentUpon>frmPessoas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrimeiroAcesso.resx">
       <DependentUpon>frmPrimeiroAcesso.cs</DependentUpon>

@@ -1,6 +1,6 @@
 ﻿namespace TCC
 {
-    partial class frmCadPessoas
+    partial class frmCadPessoa
     {
         /// <summary>
         /// Required designer variable.
@@ -39,13 +39,13 @@
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.cbxTipo = new MetroFramework.Controls.MetroComboBox();
             this.gbxPaciente = new System.Windows.Forms.GroupBox();
-            this.txtId = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.btnAssociar = new MetroFramework.Controls.MetroButton();
             this.txtNomePaci = new MetroFramework.Controls.MetroTextBox();
             this.labelid = new MetroFramework.Controls.MetroLabel();
+            this.txtId = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.btnGravar = new MetroFramework.Controls.MetroButton();
             this.btnCanc = new MetroFramework.Controls.MetroButton();
-            this.btnAssociar = new MetroFramework.Controls.MetroButton();
             this.gbxPaciente.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -243,44 +243,14 @@
             this.gbxPaciente.TabStop = false;
             this.gbxPaciente.Text = "Informe o paciente";
             // 
-            // txtId
+            // btnAssociar
             // 
-            // 
-            // 
-            // 
-            this.txtId.CustomButton.Image = null;
-            this.txtId.CustomButton.Location = new System.Drawing.Point(61, 1);
-            this.txtId.CustomButton.Name = "";
-            this.txtId.CustomButton.Size = new System.Drawing.Size(23, 23);
-            this.txtId.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtId.CustomButton.TabIndex = 1;
-            this.txtId.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtId.CustomButton.UseSelectable = true;
-            this.txtId.CustomButton.Visible = false;
-            this.txtId.Lines = new string[0];
-            this.txtId.Location = new System.Drawing.Point(16, 38);
-            this.txtId.MaxLength = 32767;
-            this.txtId.Name = "txtId";
-            this.txtId.PasswordChar = '\0';
-            this.txtId.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtId.SelectedText = "";
-            this.txtId.SelectionLength = 0;
-            this.txtId.SelectionStart = 0;
-            this.txtId.ShortcutsEnabled = true;
-            this.txtId.Size = new System.Drawing.Size(85, 25);
-            this.txtId.TabIndex = 13;
-            this.txtId.UseSelectable = true;
-            this.txtId.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtId.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel6
-            // 
-            this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(16, 16);
-            this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(21, 19);
-            this.metroLabel6.TabIndex = 12;
-            this.metroLabel6.Text = "ID";
+            this.btnAssociar.Location = new System.Drawing.Point(67, 128);
+            this.btnAssociar.Name = "btnAssociar";
+            this.btnAssociar.Size = new System.Drawing.Size(88, 45);
+            this.btnAssociar.TabIndex = 48;
+            this.btnAssociar.Text = "Associar";
+            this.btnAssociar.UseSelectable = true;
             // 
             // txtNomePaci
             // 
@@ -321,6 +291,45 @@
             this.labelid.TabIndex = 14;
             this.labelid.Text = "Nome";
             // 
+            // txtId
+            // 
+            // 
+            // 
+            // 
+            this.txtId.CustomButton.Image = null;
+            this.txtId.CustomButton.Location = new System.Drawing.Point(61, 1);
+            this.txtId.CustomButton.Name = "";
+            this.txtId.CustomButton.Size = new System.Drawing.Size(23, 23);
+            this.txtId.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtId.CustomButton.TabIndex = 1;
+            this.txtId.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtId.CustomButton.UseSelectable = true;
+            this.txtId.CustomButton.Visible = false;
+            this.txtId.Lines = new string[0];
+            this.txtId.Location = new System.Drawing.Point(16, 38);
+            this.txtId.MaxLength = 32767;
+            this.txtId.Name = "txtId";
+            this.txtId.PasswordChar = '\0';
+            this.txtId.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtId.SelectedText = "";
+            this.txtId.SelectionLength = 0;
+            this.txtId.SelectionStart = 0;
+            this.txtId.ShortcutsEnabled = true;
+            this.txtId.Size = new System.Drawing.Size(85, 25);
+            this.txtId.TabIndex = 13;
+            this.txtId.UseSelectable = true;
+            this.txtId.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtId.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.AutoSize = true;
+            this.metroLabel6.Location = new System.Drawing.Point(16, 16);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(21, 19);
+            this.metroLabel6.TabIndex = 12;
+            this.metroLabel6.Text = "ID";
+            // 
             // btnGravar
             // 
             this.btnGravar.Location = new System.Drawing.Point(117, 390);
@@ -339,16 +348,7 @@
             this.btnCanc.Text = "Cancelar";
             this.btnCanc.UseSelectable = true;
             // 
-            // btnAssociar
-            // 
-            this.btnAssociar.Location = new System.Drawing.Point(67, 128);
-            this.btnAssociar.Name = "btnAssociar";
-            this.btnAssociar.Size = new System.Drawing.Size(88, 45);
-            this.btnAssociar.TabIndex = 48;
-            this.btnAssociar.Text = "Associar";
-            this.btnAssociar.UseSelectable = true;
-            // 
-            // frmCadPessoas
+            // frmCadPessoa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -366,8 +366,8 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.metroLabel1);
-            this.Name = "frmCadPessoas";
-            this.Text = "Cadastro de Pessoa";
+            this.Name = "frmCadPessoa";
+            this.Text = "Cadastro de pessoa";
             this.Load += new System.EventHandler(this.frmCadPessoas_Load);
             this.gbxPaciente.ResumeLayout(false);
             this.gbxPaciente.PerformLayout();

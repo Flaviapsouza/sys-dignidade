@@ -32,15 +32,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gvDados = new MetroFramework.Controls.MetroGrid();
+            this.IDUSUARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnNovo = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.metroButton6 = new MetroFramework.Controls.MetroButton();
-            this.IDUSUARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NOME = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TIPO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gvDados)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,6 +99,33 @@
             this.gvDados.TabIndex = 11;
             this.gvDados.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
+            // IDUSUARIO
+            // 
+            this.IDUSUARIO.DataPropertyName = "IDUSUARIO";
+            this.IDUSUARIO.HeaderText = "ID";
+            this.IDUSUARIO.MinimumWidth = 120;
+            this.IDUSUARIO.Name = "IDUSUARIO";
+            this.IDUSUARIO.ReadOnly = true;
+            this.IDUSUARIO.Width = 120;
+            // 
+            // NOME
+            // 
+            this.NOME.DataPropertyName = "NOME";
+            this.NOME.HeaderText = "Usuário";
+            this.NOME.MinimumWidth = 350;
+            this.NOME.Name = "NOME";
+            this.NOME.ReadOnly = true;
+            this.NOME.Width = 350;
+            // 
+            // TIPO
+            // 
+            this.TIPO.DataPropertyName = "TIPO";
+            this.TIPO.HeaderText = "Tipo";
+            this.TIPO.MinimumWidth = 150;
+            this.TIPO.Name = "TIPO";
+            this.TIPO.ReadOnly = true;
+            this.TIPO.Width = 150;
+            // 
             // btnNovo
             // 
             this.btnNovo.Location = new System.Drawing.Point(14, 57);
@@ -115,7 +142,7 @@
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(88, 65);
             this.metroButton2.TabIndex = 13;
-            this.metroButton2.Text = "Consultar";
+            this.metroButton2.Text = "Visualizar";
             this.metroButton2.UseSelectable = true;
             // 
             // metroButton3
@@ -154,33 +181,6 @@
             this.metroButton6.Text = "Sair";
             this.metroButton6.UseSelectable = true;
             this.metroButton6.Click += new System.EventHandler(this.metroButton6_Click);
-            // 
-            // IDUSUARIO
-            // 
-            this.IDUSUARIO.DataPropertyName = "IDUSUARIO";
-            this.IDUSUARIO.HeaderText = "ID";
-            this.IDUSUARIO.MinimumWidth = 120;
-            this.IDUSUARIO.Name = "IDUSUARIO";
-            this.IDUSUARIO.ReadOnly = true;
-            this.IDUSUARIO.Width = 120;
-            // 
-            // NOME
-            // 
-            this.NOME.DataPropertyName = "NOME";
-            this.NOME.HeaderText = "Usuário";
-            this.NOME.MinimumWidth = 350;
-            this.NOME.Name = "NOME";
-            this.NOME.ReadOnly = true;
-            this.NOME.Width = 350;
-            // 
-            // TIPO
-            // 
-            this.TIPO.DataPropertyName = "TIPO";
-            this.TIPO.HeaderText = "Tipo";
-            this.TIPO.MinimumWidth = 150;
-            this.TIPO.Name = "TIPO";
-            this.TIPO.ReadOnly = true;
-            this.TIPO.Width = 150;
             // 
             // frmUsuario
             // 

@@ -87,7 +87,7 @@
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(88, 65);
             this.metroButton2.TabIndex = 27;
-            this.metroButton2.Text = "Consultar";
+            this.metroButton2.Text = "Visualizar";
             this.metroButton2.UseSelectable = true;
             // 
             // btnNovo

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TCC
 {
-    public partial class frmCadPessoas : MetroFramework.Forms.MetroForm
+    public partial class frmCadPessoa : MetroFramework.Forms.MetroForm
     {
-        public frmCadPessoas()
+        public frmCadPessoa()
         {
             InitializeComponent();
         }
